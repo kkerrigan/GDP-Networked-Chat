@@ -1,0 +1,44 @@
+message CreateAccountWeb {
+	required int64 requestId = 1;
+	required string email = 2;
+	required string plaintextPassword = 3;
+};
+
+message CreateAccountWebSuccess {
+ required int64 requestId = 1;
+ required int64 userId = 2;
+};
+
+message CreateAccountWebFailure {
+required int64 requestId = 1;
+required eReason reason = 2;
+
+	enum eReason {
+		ACCOUNT_ALREADY_EXISTS = 1;
+		INVALID_PASSWORD = 2;
+		INTERNAL_SERVER_ERROR = 3;
+	} 
+};
+
+message AuthenticateWeb {
+	required int64 requestId = 1;
+	required string email = 2;
+	required string plaintextPassword = 3;
+};
+
+message AuthenticateWebSuccess {
+	required string email = 1;
+	required int64 requestId = 2;
+	required int64 userId = 3;
+	required string creationDate = 4;
+};
+
+message AuthenticateWebFailure {
+	required int64 requestId = 1;
+	required eReason reason = 2;
+	
+	enum eReason {
+		INVALID_CREDENTIALS = 1;
+		INTERNAL_SERVER_ERROR = 2;
+	}
+};

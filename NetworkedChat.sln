@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2046
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chat Server", "Server\Server.vcxproj", "{8C47058D-99AE-41C9-B29D-F963FDA5698F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcxproj", "{3C2D465B-4984-424A-8F2D-8706EACCEC93}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AuthenticationServer", "AuthenticationServer\AuthenticationServer.vcxproj", "{943BBBEB-A1AF-487B-A14D-307D0AAA2333}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C47058D-99AE-41C9-B29D-F963FDA5698F}.Debug|x64.ActiveCfg = Debug|x64
+		{8C47058D-99AE-41C9-B29D-F963FDA5698F}.Debug|x64.Build.0 = Debug|x64
+		{8C47058D-99AE-41C9-B29D-F963FDA5698F}.Debug|x86.ActiveCfg = Debug|Win32
+		{8C47058D-99AE-41C9-B29D-F963FDA5698F}.Debug|x86.Build.0 = Debug|Win32
+		{3C2D465B-4984-424A-8F2D-8706EACCEC93}.Debug|x64.ActiveCfg = Debug|x64
+		{3C2D465B-4984-424A-8F2D-8706EACCEC93}.Debug|x64.Build.0 = Debug|x64
+		{3C2D465B-4984-424A-8F2D-8706EACCEC93}.Debug|x86.ActiveCfg = Debug|Win32
+		{3C2D465B-4984-424A-8F2D-8706EACCEC93}.Debug|x86.Build.0 = Debug|Win32
+		{943BBBEB-A1AF-487B-A14D-307D0AAA2333}.Debug|x64.ActiveCfg = Debug|x64
+		{943BBBEB-A1AF-487B-A14D-307D0AAA2333}.Debug|x64.Build.0 = Debug|x64
+		{943BBBEB-A1AF-487B-A14D-307D0AAA2333}.Debug|x86.ActiveCfg = Debug|Win32
+		{943BBBEB-A1AF-487B-A14D-307D0AAA2333}.Debug|x86.Build.0 = Debug|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39559291-B0DC-432A-A27B-DB885BF115FD}
+	EndGlobalSection
+EndGlobal
